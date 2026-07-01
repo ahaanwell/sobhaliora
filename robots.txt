@@ -1,9 +1,66 @@
+# ==========================================
+# robots.txt for https://www.sobhaliora.co
+# ==========================================
+
+# Allow all crawlers full access
 User-agent: *
 Allow: /
 
-# Block unnecessary files
+# Block system / non-public directories
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /js/
+Disallow: /css/
+
+# Block file types that should not be indexed
+Disallow: /*.json$
+Disallow: /*.xml$
+
+# ==========================================
+# Google-specific directives
+# ==========================================
+User-agent: Googlebot
+Allow: /
 Disallow: /cgi-bin/
 Disallow: /tmp/
 
-# Sitemap
-Sitemap: https://www.sobhaoneworlds.in/sitemap.xml
+# Allow Googlebot to crawl CSS and JS for rendering
+User-agent: Googlebot-Image
+Allow: /images/
+
+# ==========================================
+# Bing
+# ==========================================
+User-agent: Bingbot
+Allow: /
+Disallow: /cgi-bin/
+Disallow: /tmp/
+
+# ==========================================
+# Block known bad bots
+# ==========================================
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+# ==========================================
+# Crawl delay for generic bots (seconds)
+# ==========================================
+User-agent: *
+Crawl-delay: 10
+
+# ==========================================
+# Sitemap location
+# ==========================================
+Sitemap: https://www.sobhaliora.co/sitemap.xml
