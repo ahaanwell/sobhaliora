@@ -93,23 +93,75 @@
     </url>
 
     <!-- ==========================================
+         LOCATION & CONNECTIVITY PAGES
+    ========================================== -->
+    <url>
+        <loc>https://www.sobhaliora.co/whitefield.html</loc>
+        <lastmod>2026-07-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.sobhaliora.co/immadihalli.html</loc>
+        <lastmod>2026-07-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://www.sobhaliora.co/connectivity.html</loc>
+        <lastmod>2026-07-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.80</priority>
+    </url>
+
+    <!-- ==========================================
          BLOG / INFO PAGES
     ========================================== -->
     <url>
         <loc>https://www.sobhaliora.co/sobha-limited.html</loc>
-        <lastmod>2026-07-01</lastmod>
+        <lastmod>2026-07-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.70</priority>
     </url>
     <url>
         <loc>https://www.sobhaliora.co/brochure.html</loc>
-        <lastmod>2026-07-01</lastmod>
+        <lastmod>2026-07-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.70</priority>
     </url>
     <url>
         <loc>https://www.sobhaliora.co/project-status.html</loc>
-        <lastmod>2026-07-01</lastmod>
+        <lastmod>2026-07-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.70</priority>
+    </url>
+    <url>
+        <loc>https://www.sobhaliora.co/launch-date.html</loc>
+        <lastmod>2026-07-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.75</priority>
+    </url>
+    <url>
+        <loc>https://www.sobhaliora.co/latest-updates.html</loc>
+        <lastmod>2026-07-26</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.75</priority>
+    </url>
+    <url>
+        <loc>https://www.sobhaliora.co/rera.html</loc>
+        <lastmod>2026-07-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.70</priority>
+    </url>
+    <url>
+        <loc>https://www.sobhaliora.co/review.html</loc>
+        <lastmod>2026-07-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.70</priority>
+    </url>
+    <url>
+        <loc>https://www.sobhaliora.co/investment.html</loc>
+        <lastmod>2026-07-26</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.70</priority>
     </url>
