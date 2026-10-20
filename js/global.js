@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Form Submission Handling
-const smtp_api = "https://m2nserver.online/send-lead";
+const smtp_api = "http://localhost:5000/send-lead";
 
 function validateForm(name, email, number) {
     if (!name || !email || !number) {
@@ -64,7 +64,7 @@ async function submitForm(name, email, number, countryCode = '') {
         email,
         number,
         country_code: countryCode,
-        company_email: 'info@searchmyspace.in',
+        company_email: 'ahaanwell@gmail.com',
         project_name: "Sobha Liora",
     };
 

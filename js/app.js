@@ -132,32 +132,60 @@ async function submitForm(name, email, number, countryCode = '') {
         company_email: 'info@searchmyspace.in',
         project_name: "Sobha Liora",
     };
+    console.log("cliekd 2")
 
-    try {
-        const res = await fetch(smtp_api, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)
-        });
+    // try {
+    //     const res = await fetch(smtp_api, {
+    //         method: 'POST',
+    //         headers: {
+    //             'Content-Type': 'application/json'
+    //         },
+    //         body: JSON.stringify(data)
+    //     });
 
-        if (res.ok) {
-            const responseData = await res.json();
-            alert(responseData.message);
-            return true;
-        } else {
-            alert("Something went wrong");
-        }
-    } catch (error) {
-        console.log("error",error.message)
-        alert("Something went wrong, please try again");
+    //     if (res.ok) {
+    //         const responseData = await res.json();
+    //         alert(responseData.message);
+    //         return true;
+    //     } else {
+    //         alert("Something went wrong");
+    //     }
+    // } catch (error) {
+    //     console.log("error",error.message)
+    //     alert("Something went wrong, please try again");
+    // }
+
+    try{
+      console.log("cliekd 3")
+      const res = await fetch("http://localhost:5000/api/v1/public/leads", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({
+    apiKey: "f432599a50fc78ec05c26fab05f4672638a8930003a826c33443b594fff751b2",
+    name,
+    mobile: number,
+    email,
+    projectInterest: "Sobha Liora",
+    source: "website",
+    utmSource: new URLSearchParams(location.search).get("utm_source"),
+    utmMedium: new URLSearchParams(location.search).get("utm_medium"),
+    utmCampaign: new URLSearchParams(location.search).get("utm_campaign"),
+  }),
+});
+const data = await res.json();
+console.log(data);
+    }
+
+    catch(err){
+      console.log(err)
+      return false
     }
     return false;
 }
 
 async function submitBtn1(e) {
     e.preventDefault();
+    console.log("clicked")
 
     const submitBtn_1 = document.getElementById("submitBtn_1");
     const name = document.getElementById("name_1").value;
